@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/emoji_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@color/white"
+            android:textIsSelectable="true"
+            android:text="Filter results will be shown here" />
+
+        <Button
+            android:id="@+id/emoji_filter_surrogate_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Character.isSurrogate filter"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/emoji_filter_hardcoded_list_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Hardcoded list filter"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/emoji_filter_unicode_group_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Unicode group filter"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</ScrollView>
